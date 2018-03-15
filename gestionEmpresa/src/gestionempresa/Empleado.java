@@ -7,7 +7,7 @@ package gestionempresa;
 
 /**
  *
- * @author crisber
+ * @author crisber & Fran
  */
 public class Empleado {
     
