@@ -7,13 +7,14 @@ package gestionempresa;
 
 /**
  *
- * @author Administrador
+ * @author JfGm
  */
 public class Departamento {
+    
+    //Declaracion de los atributos
     private String nombre, descripcion;
 
-    
-    
+    //Declaración de los constructores
     public Departamento(){
         nombre=null;
         descripcion=null;
@@ -23,19 +24,21 @@ public class Departamento {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-
+    
+    //Métodos get y set
     public String getNombre() {
         return nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+    public String getDescripcion() {
+        return descripcion;
+    }
 
+    
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
