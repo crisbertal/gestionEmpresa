@@ -6,6 +6,7 @@
 package gestionempresa;
 
 import java.util.ArrayList;
+
 /**
  *
  * @author crisber
@@ -70,5 +71,5 @@ public class listarTrabajadoresEmpresa {
     ArrayList<Departamento> listarDepartamentos = new ArrayList<>();
     
     //Añadir los 4 objetos departamentos
-    listarDepartamentos.size();
+    
 }
