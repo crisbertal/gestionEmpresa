@@ -13,6 +13,8 @@ import java.util.ArrayList;
  */
 public class listarTrabajadoresEmpresa {
     
+    public static void main(String[] args) {
+        
     /*
     Crear 4 objetos departamentos cuyo nombre identificativo será: "Desarrollo", 
     "Sistemas", "Contabilidad", "Ventas". El resto de valores de los atributos 
@@ -68,8 +70,29 @@ public class listarTrabajadoresEmpresa {
     listaEmpleados donde se añadirán los 12 objetos empleados creados.
     */
     
-    ArrayList<Departamento> listarDepartamentos = new ArrayList<Departamento>();
+    ArrayList<Departamento> listarDepartamentos = new ArrayList<>();
+    ArrayList<Empleado> listarEmpleados = new ArrayList<>();
     
     //Añadir los 4 objetos departamentos
+    listarDepartamentos.add(ventas);
+    listarDepartamentos.add(contabilidad);
+    listarDepartamentos.add(desarrollo);
+    listarDepartamentos.add(sistemas);
     
+    //Añadir los 12 objetos empleados
+    listarEmpleados.add(as1);
+    listarEmpleados.add(as2);
+    listarEmpleados.add(as3);
+    listarEmpleados.add(cc1);
+    listarEmpleados.add(cc2);
+    listarEmpleados.add(cc3);
+    listarEmpleados.add(cv1);
+    listarEmpleados.add(cv2);
+    listarEmpleados.add(cv3);
+    listarEmpleados.add(pd1);
+    listarEmpleados.add(pd2);
+    listarEmpleados.add(pd3);
+        
+    }
+   
 }
