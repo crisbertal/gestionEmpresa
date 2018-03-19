@@ -67,8 +67,8 @@ public class listarTrabajadoresEmpresa {
     listaEmpleados donde se añadirán los 12 objetos empleados creados.
     */
     
-    ArrayList<Departamento> listarDepartamentos = new ArrayList<Departamento>();
+    ArrayList<Departamento> listarDepartamentos = new ArrayList<>();
     
     //Añadir los 4 objetos departamentos
-    
+    listarDepartamentos.size();
 }
