@@ -92,6 +92,38 @@ public class listarTrabajadoresEmpresa {
     listarEmpleados.add(pd1);
     listarEmpleados.add(pd2);
     listarEmpleados.add(pd3);
+    
+    /*
+    Por último se listará la información almacenada en los ArrayList creados 
+    con anterioridad mostrando en primer lugar la información del departamento 
+    y a continuación la información de los empleados que trabajan en dicho 
+    departamento.
+    */
+    
+    for(Departamento departamento: listarDepartamentos) {
+        System.out.println("---- Departamento: " + departamento.getNombre() 
+                + " ----");
+        System.out.println("");
+        System.out.println("Información del departamento: " 
+                + departamento.getDescripcion());
+        System.out.println("");
+        System.out.println("-- Empleados del departamento " 
+                + departamento.getNombre() + " --");
+        System.out.println("");
+        for(Empleado empleado: listarEmpleados) {
+            if(empleado.getNombreDepartamento() == departamento.getNombre()) {
+                System.out.println("ID: " + empleado.getIdEmpleado());
+                System.out.println("Nombre: " + empleado.getNombre());
+                System.out.println("Apellidos: " + empleado.getApellidos());
+                System.out.println("Departamento: " 
+                        + empleado.getNombreDepartamento());
+                System.out.println("Salario: " + empleado.getSalario());
+                System.out.println("Trabajo: " + empleado.getTrabajo());
+                System.out.println("");
+            }
+        }
+        
+    }
         
     }
    
