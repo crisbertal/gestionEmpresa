@@ -10,9 +10,9 @@ import java.util.Iterator;
 
 /**
  *
- * @author crisber
+ * @author JfGm
  */
-public class listarTrabajadoresEmpresa {
+public class eliminarTrabajadoresEmpresa {
     
     public static void main(String[] args) {
         
@@ -114,8 +114,6 @@ public class listarTrabajadoresEmpresa {
         System.out.println("");
         
         for(Empleado empleado: listarEmpleados) {
-            if(empleado.getNombreDepartamento() == departamento.getNombre()) {
-                
                 System.out.println("ID: " + empleado.getIdEmpleado());
                 System.out.println("Nombre: " + empleado.getNombre());
                 System.out.println("Apellidos: " + empleado.getApellidos());
@@ -126,6 +124,33 @@ public class listarTrabajadoresEmpresa {
                 System.out.println("");
             }
         }
-    }    
- }
+    
+    
+
+    /*Declaramos el Iterator para recorrer el array y eliminar los empleados 
+    que tienen un salario mayor de 20000
+    */
+    Iterator <Empleado> it =listarEmpleados.iterator();
+        System.out.println("Empleados que se van a eliminar:");
+        System.out.println("--------------------------------");
+        while(it.hasNext()==true){
+            Empleado i= it.next();
+            if(i.getSalario()>2000){
+                System.out.println((char) 27 + "[37;44m► " 
+                       + i.getNombre()+ "," + i.getApellidos() + " - (" + i.getSalario() + ")");
+            it.remove();
+            }
+        }   
+ 
+    System.out.println("");
+    System.out.println("Listado de empleados despues de la eliminación");
+    System.out.println("----------------------------------------------");
+    for(Empleado pp:listarEmpleados){
+        System.out.println((char)27 + 
+            "[34;43m► " + pp.getNombre() + " " + pp.getApellidos());
+        
+        }
+    }
+    
+    
 }
