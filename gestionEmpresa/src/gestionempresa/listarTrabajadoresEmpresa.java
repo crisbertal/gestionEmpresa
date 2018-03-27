@@ -6,6 +6,7 @@
 package gestionempresa;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -32,7 +33,7 @@ public class listarTrabajadoresEmpresa {
     
     /*
     Crear 12 objetos empleados que tendrán los siguientes trabajos: 3 empleados 
-    serán "Progamadores" y trabajarán en el departamento de "Desarrollo", otros 
+    serán "Programadores" y trabajarán en el departamento de "Desarrollo", otros 
     3 empleados serán "Administradores" y trabajarán en el departamento de 
     "Sistemas", otros 3 serán contables y trabajarán en el departamento de 
     "Contabilidad" y los tres últimos serán "Comerciales" y trabajarán en el 
@@ -124,7 +125,30 @@ public class listarTrabajadoresEmpresa {
         }
         
     }
-        
+    
+
+    /*Declaramos el Iterator para recorrer el array y eliminar los empleados 
+    que tienen un salario mayor de 20000
+    */
+    Iterator <Empleado> it =listarEmpleados.iterator();
+        System.out.println("Empleados que se van a eliminar:");
+        System.out.println("--------------------------------");
+        while(it.hasNext()==true){
+            Empleado i= it.next();
+            if(i.getSalario()>2000){
+                System.out.println("► " 
+                       + i.getNombre()+ " - (" + i.getSalario() + ")");
+            it.remove();
+            }
+        }   
+ 
+    System.out.println("");
+    System.out.println("Listado de empleados despues de la eliminación");
+    System.out.println("----------------------------------------------");
+    for(Empleado pp:listarEmpleados){
+        System.out.println(
+            "► " + pp.getNombre() + " " + pp.getApellidos());
+        }
     }
-   
+    
 }

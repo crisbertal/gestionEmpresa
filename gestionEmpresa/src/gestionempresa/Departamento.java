@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package gestionempresa;
+import java.util.ArrayList;
 
 /**
  *
